@@ -1,0 +1,23 @@
+/* helloWorld.css */
+
+h1 {
+    font-size: 44px;
+    color: darkGreen;
+   }
+   
+abbr {
+        padding:20px;
+        border-style: dotted;
+        margin: 30px;
+        width: 400px;
+        display: inline-block;
+     }
+
+a {
+    text-decoration: none;
+    border-style:solid;
+    background-color: darkgreen;
+    color:white;
+    padding:15px;
+    border-radius: 10px;
+  }
