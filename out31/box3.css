@@ -1,0 +1,25 @@
+/* box3.css */
+
+
+    
+ div{
+    background-image: url('luar_500_500.jpg');
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 500px;
+   height: 500px;
+   
+    border: solid;
+    padding: 20px;
+    background-color: #4A4A4A;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-radius: 20px;
+    position: 
+    
+ }
+
+
+
