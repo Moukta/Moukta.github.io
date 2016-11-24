@@ -1,0 +1,124 @@
+/* edX.css */
+
+/* HEAD */
+
+
+body {
+margin: 0;
+min-width: 1400px;
+font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.75);
+    display: block;
+    padding-bottom: 13px;
+    padding-top: 13px;
+}
+
+header div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+header div img {
+vertical-align: middle;
+margin-left: 100px;
+margin-right: 25px;
+}
+
+.atalhos{
+    vertical-align: middle;
+    font-weight: bold;
+    
+}
+
+.atalhos a {
+     color: #4288cc;
+}
+
+.floatbadjoras {
+    float: right;
+    margin-top: 11px;
+}
+
+.ladocaixagrey {
+    text-decoration: none;
+    color: grey;
+}
+
+.caixazul {
+    border-radius: 2px 2px 2px 2px;
+    border: 0px solid #000000;
+    background-color: #4288CC;
+    padding: 7px 20px 7px 20px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.container {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div nav {
+display: inline-block;
+}
+
+div:nth-child(4) nav {
+margin-right: 0px;
+}
+
+ul {
+display: inline;
+vertical-align: middle;
+}
+
+li {
+float: left;
+list-style: none;
+
+}
+
+li a {
+text-decoration: none;
+}
+
+li:nth-child(n) {
+margin-right: 30px;
+}
+
+
+/* BODY */
+
+
+.bibidibaba {
+    
+    float: left;
+    margin: 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
