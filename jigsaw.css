@@ -1,0 +1,280 @@
+/*
+   TRABALHO 1 DE APLICAÇÕES MULTIMÉDIA 2020
+   GRUPO: NOME | NUMERO DE ALUNO
+*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(images/background.jpg);
+}
+
+
+
+#stage {
+  
+  display: block;
+ 
+}
+
+#final {
+  display: none;
+}
+
+.tela {
+  position: relative;
+  width: 366px;
+  height: 366px;
+  margin: 0px;
+  background-color: white;
+  border: 10px solid #1D4952;
+  box-shadow: inset 2px 2px 2px 0px #aaaaaa, 4px 4px 4px #1E7179;
+  border-radius: 2%;
+
+}
+
+#title {
+  color: white;
+  text-shadow: 1px 1px 1px #1D4952; 
+}
+
+#output {
+  color: white;
+  font-family: tahoma;
+  font-size: 1em;
+  margin-top: 10px;
+  line-height: 25px !important;
+  width: 100%;
+  display: block;
+}
+#njogadas{
+  text-shadow: 1px 1px 1px #1D4952; 
+}
+
+#njogadas strong{
+  padding-left: 5px;
+  
+}
+
+.metade {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+.tesquerda {
+  text-align: left;
+  line-height: 25px;
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+.tdireita {
+  text-align: right;
+  line-height: 25px;
+  display: table-cell !important;
+  vertical-align: middle !important;
+}
+
+.cell {
+  display: block;
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  border: 1px solid white;
+  box-shadow: 1px 1px 1px #888888;
+  cursor: pointer;
+  border-radius: 5%;
+ 
+}
+
+.cell:hover {
+  opacity: 0.8;
+}
+
+#game {
+  width: 390px;
+  height: 455px;
+  position: relative;
+  margin: 0px auto;
+  top: 50px;
+}
+
+@font-face {
+  font-family: PiratesWriters;
+  src: url("fonts/PiratesWriters.ttf");
+}
+
+h1 {
+  text-align: center;
+  font-family: PiratesWriters;
+  font-size: 50px;
+}
+
+p {
+  font-size: 18px;
+  padding: 10px;
+}
+
+
+
+#thumSet {
+  display: block;
+  height: 54px;
+  width: auto;
+  border: 1px solid white;
+  position: relative;
+  margin-top: 10px;
+}
+
+.icon {
+  float: right;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3px 5px 3px 0px;
+  cursor: pointer;
+}
+
+.view {
+  background-image: url("images/ui/view.png");
+  box-shadow: inset 0 0 0 1px white;
+  border-radius: 50%;
+}
+
+.viewOff {
+  background-position-x: -20px!important;
+}
+
+.sound {
+  background-image: url("images/ui/sound-icon-250.png");
+}
+
+.soundOff {
+  background-position-x: -20px!important;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  text-align:center;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.btnReset{
+  margin: 20px 0 0 35%;
+  background-color:#9ba2ad;
+	border-radius:20px;
+	border:1px solid #9ba2ad;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:12px 30px;
+  text-decoration:none;
+  outline:0;
+}
+
+.btnReset:hover {
+	background-color:#94b2d6;
+}
+.btnReset:active {
+	position:relative;
+	top:1px;
+}
+
+.menuImagens{
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  border: 1px solid white;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 5px 5px 0px 0px;
+  border-radius: 100%;
+  overflow: hidden;
+  outline:0;
+
+}
+
+.menuImagens:hover{
+ opacity: 0.8;
+}
+        
+
+#animado{
+  -webkit-animation: rodar 4s infinite linear;
+
+}
+
+.menuTamanho{
+  width: 55px;
+  height: 55px;
+  display: inline-block;
+  border: 1px solid black;
+  cursor: pointer;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 20px 7px 0px 0px;
+  border-radius: 50%;
+  overflow: hidden;
+  outline:0;
+
+}
+
+.menuTamanho:hover{
+  opacity: 0.8;
+}
+
+ 
+
+@-webkit-keyframes rodar {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
